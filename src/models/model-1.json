@@ -1,0 +1,14 @@
+{
+  "type": "div",
+  "attributes": {
+    "class": {
+      "content": ["test"]
+    },
+    "style": {
+      "content": [
+        { "key": "background", "value": "beige"}
+      ]
+    }
+  },
+  "children": []
+}

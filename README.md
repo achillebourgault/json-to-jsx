@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# JSON To JSX
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective of this project is to transform and render JSON elements into JSX components.
 
-## Available Scripts
+## Test the project
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
+In the project directory, you can run `npm start` to run the app in the development mode.\
+\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to use
 
-### `npm test`
+```javascript
+import {JsxElement} from "./Component/JsxElement";
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+export function JsxCustomJSONTest() {
+    return <JsxElement metaData={demoData} />
+}
+```
+## Examples of JSON Data Models
 
-### `npm run build`
+Here is an example from [models-1.json](src/models/model-1.json)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+  "type": "div",
+  "attributes": {
+    "class": {
+      "content": ["test"]
+    },
+    "style": {
+      "content": [
+        { "key": "background", "value": "beige"}
+      ]
+    }
+  },
+  "children": []
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> All elements must have a `type` parameter.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The type names are the same as in HTML except for elements that display text. In this case the type must be "RAW_TEXT".
 
-### `npm run eject`
+Example of a **JSON Data Model** that displays an `h1` tag:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```json
+{
+  "type": "a",
+  "attributes": {
+    "style": {
+      "content": [
+        { "key": "textAlign", "value": "center" }
+      ]
+    },
+    "href": "https://google.com"
+  },
+  "children": [
+    {
+      "type": "RAW_TEXT",
+      "rawContent": "Test link"
+    }
+  ]
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> [All Demo Data Models](http://localhost:3000)
+- [Models-1.json](src/models/model-1.json)
+- [Models-2.json](src/models/model-2.json)

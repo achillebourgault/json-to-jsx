@@ -1,0 +1,40 @@
+{
+  "type": "div",
+  "attributes": {
+    "class": {
+      "content": ["test"]
+    }
+  },
+  "children": [
+    {
+      "type": "div",
+      "attributes": {
+        "style": {
+          "content": [
+            {"key": "height", "value": "400px"},
+            {"key": "width", "value": "100%"},
+            {"key": "background", "value": "blue"}
+          ]
+        }
+      }
+    },
+    {
+      "type": "a",
+      "attributes": {
+        "style": {
+          "content": [
+            {"key": "background", "value": "aqua"},
+            {"key": "textAlign", "value": "center"}
+          ]
+        },
+        "href": "https://google.com"
+      },
+      "children": [
+        {
+          "type": "RAW_TEXT",
+          "rawContent": "Test link"
+        }
+      ]
+    }
+  ]
+}
