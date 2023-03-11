@@ -33,6 +33,36 @@ const demoData = {
                     ],
                 }
             }
+        },
+        {
+            type: ComponentType.DIV,
+            attributes: {
+                style: {
+                    content: [
+                        {key: "height", value: "400px"},
+                        {key: "width", value: "100%"},
+                        {key: "background", value: "magenta"}
+                    ],
+                }
+            }
+        },
+        {
+            type: ComponentType.A,
+            attributes: {
+                style: {
+                    content: [
+                        {key: "background", value: "aqua"},
+                        {key: "textAlign", value: "center"}
+                    ],
+                },
+                href: 'https://google.com'
+            },
+            children: [
+                {
+                    type: ComponentType.RAW_TEXT,
+                    rawContent: "Test link"
+                }
+            ]
         }
     ]
 }
