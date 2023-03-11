@@ -64,6 +64,6 @@ Example of a **JSON Data Model** that displays an `h1` tag:
 }
 ```
 
-> [All Demo Data Models](http://localhost:3000)
+> [All Demo Data Models](https://github.com/achillebourgault/json-to-jsx/tree/main/src/models)
 - [Models-1.json](src/models/model-1.json)
 - [Models-2.json](src/models/model-2.json)
