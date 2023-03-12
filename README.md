@@ -2,12 +2,6 @@
 
 The objective of this project is to transform and render JSON elements into JSX components.
 
-## Test the project
-
-In the project directory, you can run `npm start` to run the app in the development mode.\
-\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
 ## How to use
 
 ```javascript
