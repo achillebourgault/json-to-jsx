@@ -1,13 +1,9 @@
 {
   "type": "div",
   "attributes": {
-    "class": {
-      "content": ["test"]
-    },
+    "className": "test",
     "style": {
-      "content": [
-        { "key": "background", "value": "beige"}
-      ]
+      "background": "beige"
     }
   },
   "children": []

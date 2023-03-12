@@ -25,13 +25,9 @@ Here is an example from [models-1.json](src/models/model-1.json)
 {
   "type": "div",
   "attributes": {
-    "class": {
-      "content": ["test"]
-    },
+    "className": "test",
     "style": {
-      "content": [
-        { "key": "background", "value": "beige"}
-      ]
+      "background": "beige"
     }
   },
   "children": []
@@ -49,18 +45,11 @@ Example of a **JSON Data Model** that displays an `<a>` tag:
   "type": "a",
   "attributes": {
     "style": {
-      "content": [
-        { "key": "textAlign", "value": "center" }
-      ]
+      "textAlign": "center"
     },
     "href": "https://google.com"
   },
-  "children": [
-    {
-      "type": "RAW_TEXT",
-      "rawContent": "Test link"
-    }
-  ]
+  "text": "Test link"
 }
 ```
 
