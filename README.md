@@ -42,7 +42,7 @@ Here is an example from [models-1.json](src/models/model-1.json)
 
 The type names are the same as in HTML except for elements that display text. In this case the type must be "RAW_TEXT".
 
-Example of a **JSON Data Model** that displays an `h1` tag:
+Example of a **JSON Data Model** that displays an `<a>` tag:
 
 ```json
 {
