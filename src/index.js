@@ -16,8 +16,6 @@ const JsxElement = props => {
     }
      */
 
-    return <div>coicu</div>
-
     if (type !== undefined && type !== null) {
         return createElement(
             type,
