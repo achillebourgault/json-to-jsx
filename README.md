@@ -5,7 +5,7 @@ The objective of this project is to transform and render JSON elements into JSX 
 ## How to use
 
 ```javascript
-import {JsxElement} from "./Component/JsxElement";
+import JsxElement from "@achillebourgault/json-to-jsx";
 import demoData from "./models/model-1.json"
 
 export function JsxCustomJSONTest() {
@@ -47,5 +47,5 @@ Example of a **JSON Data Model** that displays an `<a>` tag:
 ```
 
 > [All Demo Data Models](https://github.com/achillebourgault/json-to-jsx/tree/main/src/models)
-- [Models-1.json](src/models/model-1.json)
-- [Models-2.json](src/models/model-2.json)
+- [Models-1.json](https://github.com/achillebourgault/json-to-jsx/tree/main/src/models/model-1.json)
+- [Models-2.json](https://github.com/achillebourgault/json-to-jsx/tree/main/src/models/model-2.json)
